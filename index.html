@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Face recognition App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Let's find your age!</h1>
+    
+    <div class="container">
+      <video id="video" height="500" width="500" autoplay muted></video>
+    </div>
+    <div class="result-container">
+      <div class="res" id="emotion">Emotion</div>
+      <div class="res" id="gender">Gender</div>
+      <div class="res" id="age">Age</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="face-api.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
